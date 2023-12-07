@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel ="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>User Feedback Form</h1>
+    <form action="http://" method="post">
+        <label for="feedback-user">Username</label>
+        <input
+        type="text"
+        id="feedback-user"
+        maxlength="10"
+        tabindex="1">
+
+        <label for="feedback-fullname">Full-name</label>
+        <input id="feedback-fullname"
+        name="name"
+        type="text"
+        tabindex="2">
+
+        <label for="feedback-email">Email</label>
+        <input id="feedback-email"
+        id="feedback-email"
+        name="email"
+        type="email"
+        tabindex="3">
+
+        <label for="feedback-date">Date</label>
+        <input id="feedback-date"
+        type="date"
+        name="date"
+        tabindex="4">
+
+        <label for="feedback-problem">Problem</label>
+        <input id="feedback-problem"
+        name="problem"
+        id="feedback-problem"
+        list="feedback-pro"
+        tabindex="5">
+
+        <datalist id="feedback-pro">
+            <option value="Network Issue"></option>
+            <option value="User Input Issue"></option>
+            <option value="Website Loading Issue"></option>
+        </datalist>
+
+
+        <textarea id="feedback-message"	
+        name="message"
+        rows="6"
+        placeholder="Tell me about issue"
+        tabindex="6"></textarea>
+
+
+        <label for="feedback-file"></label>
+        <input type="file"
+        id="feedback-file"
+        name="file"
+        accept="image/png, image/jpg"
+        tabindex="7">
+
+        <div class ="button">
+        <input type="submit" name="SUBMIT" value="SUBMIT" tabindex="8" class="btn btn-outline-dark">
+
+        <input type="reset" name="reset" value="RESET" tabindex="9" class = "btn btn-outline-dark">
+      </div>
+    </form>
+    <br>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</body>
+</html>
+
+ 
+  
+  
